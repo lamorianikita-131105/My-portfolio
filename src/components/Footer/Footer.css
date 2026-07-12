@@ -1,0 +1,33 @@
+.footer {
+  border-top: 1px solid var(--border);
+}
+
+.footer__container {
+  min-height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.footer__container a {
+  transition: color 180ms ease;
+}
+
+.footer__container a:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 650px) {
+  .footer__container {
+    padding-block: 28px;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+}

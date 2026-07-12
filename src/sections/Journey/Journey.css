@@ -1,0 +1,143 @@
+.journey {
+  background: var(--background-secondary);
+}
+
+.journey__heading {
+  max-width: 900px;
+  margin-bottom: 72px;
+}
+
+.journey__heading h2 {
+  margin-top: 18px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+
+.journey__heading h2 span {
+  color: var(--accent);
+}
+
+.journey__heading > p:last-child {
+  max-width: 700px;
+  margin-top: 24px;
+
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.journey__timeline {
+  position: relative;
+}
+
+.journey__timeline::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+
+  width: 1px;
+
+  background: var(--border);
+}
+
+.journey__item {
+  position: relative;
+
+  min-height: 150px;
+  padding: 30px 0;
+
+  display: grid;
+  grid-template-columns: 65px 130px 1fr;
+  gap: 28px;
+  align-items: start;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.journey__marker {
+  position: relative;
+  z-index: 2;
+
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--background-secondary);
+}
+
+.journey__marker span {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.journey__year {
+  padding-top: 19px;
+
+  color: var(--accent);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.journey__content {
+  padding-top: 12px;
+}
+
+.journey__content h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.journey__content p {
+  max-width: 720px;
+  margin-top: 10px;
+
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+  .journey__heading {
+    margin-bottom: 48px;
+  }
+
+  .journey__timeline::before {
+    left: 23px;
+  }
+
+  .journey__item {
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+  }
+
+  .journey__marker {
+    width: 48px;
+    height: 48px;
+  }
+
+  .journey__year {
+    padding-top: 12px;
+  }
+
+  .journey__content {
+    grid-column: 2;
+    padding-top: 0;
+  }
+}
