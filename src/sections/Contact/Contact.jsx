@@ -3,14 +3,14 @@ import "./Contact.css";
 const contactLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/lamorianikita-131105",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/nikita-lamoria-747798335",
   },
   {
-    label: "Download résumé",
+    label: "Download resume",
     href: "/resume.pdf",
     download: true,
   },
@@ -35,9 +35,9 @@ function Contact() {
 
         <a
           className="contact__email"
-          href="mailto:your-email@gmail.com"
+          href="mailto:lamorianikita9@gmail.com"
         >
-          your-email@gmail.com
+          lamorianikita9@gmail.com
           <span aria-hidden="true"> ↗</span>
         </a>
 
