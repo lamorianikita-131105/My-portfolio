@@ -3,11 +3,11 @@ import "./Hero.css";
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/lamorianikita-131105",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/nikita-lamoria-747798335",
   },
 ];
 
@@ -45,7 +45,7 @@ function Hero() {
               href="/resume.pdf"
               download
             >
-              Download résumé
+              Download resume
             </a>
           </div>
 
@@ -62,7 +62,7 @@ function Hero() {
               </a>
             ))}
 
-            <a href="mailto:your-email@gmail.com">
+            <a href="mailto:lamorianikita9@gmail.com">
               Email
               <span aria-hidden="true"> ↗</span>
             </a>
